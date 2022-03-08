@@ -39,7 +39,7 @@ Widget navDrawer(context) => Drawer(
                   duration: Duration(seconds: 5),
                   content: Text('Переход на главный экран')));
         },
-      ),
+      ),// Кнопка перехода на главный экран
       const Divider(),
       ListTile(
         leading: const Icon(CupertinoIcons.circle_grid_3x3_fill),
@@ -51,7 +51,19 @@ Widget navDrawer(context) => Drawer(
                   duration: Duration(seconds: 5),
                   content: Text('Переход в калькулятор')));
         },
-      ),
+      ),// Кнопка перехода на экран калькулятора
+      const Divider(),
+      ListTile(
+        leading: const Icon(CupertinoIcons.add_circled),
+        title: const Text('Счетчик'),
+        onTap: (){
+          Navigator.pushNamed(context, '/counter');
+          _messengerKey.currentState!.showSnackBar(
+              const SnackBar(
+                  duration: Duration(seconds: 5),
+                  content: Text('Переход в счетчик')));
+        },
+      ),// Кнопка перехода на экран счетчика
     ],
   ),
 );
@@ -66,6 +78,11 @@ PreferredSizeWidget appBar(context) => AppBar(
       tooltip: 'Переход в калькулятор',
       onPressed: (){Navigator.pushNamed(context, '/nav_calculator');},
       icon: const Icon(CupertinoIcons.circle_grid_3x3_fill),),// Кнопка перехода в калькулятор
+    IconButton(
+      tooltip: 'Переход в счетчик',
+      onPressed: (){Navigator.pushNamed(context, '/counter');},
+      icon: const Icon(CupertinoIcons.add_circled),),// Кнопка перехода в счетчик
+
   ],
   // title: const Text('Калькулятор'),
 );// Панель с

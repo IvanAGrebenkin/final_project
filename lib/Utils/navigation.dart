@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import '../../Screens/main_screen.dart';
 import '../../Screens/calculator.dart';
 import '../../Screens/auth_page.dart';
+import '../../Screens/counter.dart';
+
 
 class Navigation extends StatefulWidget {
   const Navigation({Key? key}) : super(key: key);
@@ -25,6 +27,7 @@ class _NavigationDemoState extends State<Navigation> {
         '/': (context) => const AuthPage(),
         '/main_screen': (context) => const MainScreen(),
         '/nav_calculator': (context) => const Calculator(),
+        '/counter': (context) => const Counter(),
       },
     );
   }
