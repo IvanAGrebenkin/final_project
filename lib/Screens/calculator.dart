@@ -246,7 +246,7 @@ class _CalculatorState extends State<Calculator> {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal:30.0),
                 child: Card(
-                  color: const Color(0xffECEFF1),
+                  color:   Theme.of(context).colorScheme.background,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(15),
                   ),
@@ -278,7 +278,7 @@ class _CalculatorState extends State<Calculator> {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 30.0),
                 child: Card(
-                    color: const Color(0xffECEFF1),
+                    color:  Theme.of(context).colorScheme.background,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(15),
                     ),
