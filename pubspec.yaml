@@ -31,6 +31,7 @@ dependencies:
   flutter:
     sdk: flutter
   shared_preferences: ^2.0.13
+  path_provider: ^2.0.9
 
 
 

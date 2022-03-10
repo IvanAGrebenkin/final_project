@@ -27,7 +27,7 @@ class _NavigationDemoState extends State<Navigation> {
         '/': (context) => const AuthPage(),
         '/main_screen': (context) => const MainScreen(),
         '/nav_calculator': (context) => const Calculator(),
-        '/counter': (context) => const Counter(),
+        '/counter': (context) => CounterScreen(storage: Counter2Storage()),
       },
     );
   }
