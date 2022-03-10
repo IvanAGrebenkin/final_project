@@ -2,14 +2,6 @@ import 'package:flutter/material.dart';
 import '../Utils/widgets.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-class ThemeCount extends StatelessWidget {
-  const ThemeCount({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp();
-  }
-}
 
 class Counter extends StatefulWidget {
   const Counter({Key? key}) : super(key: key);
@@ -57,7 +49,7 @@ class _CounterState extends State<Counter> {
     return MaterialApp(
       theme: ThemeData(
         colorScheme: ColorScheme.fromSwatch(
-          primarySwatch: Colors.deepOrange,
+          primarySwatch: Colors.green,
         ),
       ),
       scaffoldMessengerKey: _messengerKey,
